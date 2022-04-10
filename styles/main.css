@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: auto;
+    overflow: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background: #11101d;
+    padding: 6px 14px;
+    color: #fff;
+}
+.logo_content{
+    width:20%;
+}
+.sidebar .logo_content .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+.logo_content .logo i{
+    font-size: 28;
+    font-weight: 400;
+    margin-right: 25px;
+}
+.active {
+    width: 50px;
+}
+
+.sidebar ul{
+    position:relative;
+    margin-top: 20px;
+    width:20%;
+}
+
+.sidebar ul li{
+    white-space: nowrap;
+    /*margin: 0 50px;*/
+    list-style: none;
+    line-height: 50px;
+}
+.sidebar ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+.bx{
+    color: #fff;
+    margin-right: 2%;
+}
+.sidebar li a:hover{
+    color:#11101d;
+    background: #fff;
+}
+.sidebar ul li a box-icon{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+/*.profile_content{
+    position: relative;
+}
+.profile_content .profile span i{
+    color: #fff;
+    margin-right: 25px;
+    top: 10px;
+}*/
+.profile_content .profile{
+    position: relative;
+    height: 60px;
+}
+
+.profile_content .profile img{
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/* #myImage{
+    height: 30px;
+    width: 30px;
+} */
+
+.profile_content .profile #name{
+    position: absolute;
+    width: 10%;
+    margin-left: 2%;
+    text-align: center;
+}
+.profile_content .profile #job_name{
+    padding-top: 10%;
+    margin-left: 2%;
+    width: 10%;
+    pointer-events: none;  
+}
+
+/**************************************/
+header {
+    background-image: url('../images/code.jpg');
+    background-repeat: repeat-x;
+    height: 50px;
+}
+.container{
+    position: relative;
+    left: 10%;
+}
+.competences {
+    display: none;
+}
+
+.experiences {
+    display: none;
+}
+.formation {
+    display: none;
+}
+
+.control{
+    position: relative;
+    left: 0%;
+    background-color: #11101d;
+    height: 100%;
+    width: 200px;
+    top: 50px;
+    
+}
+.control li {
+    list-style: none;
+    line-height: 50px;
+}
+.control ul {
+    position: relative;
+    top: 20%;
+}
+.control li p {
+    margin-left: 15px;
+}
+.clients {
+    position: absolute;
+    height: 100%;
+    left:25%;
+    top:60px;
+}
+.dartyc{
+    display: none;
+}
+.electroc{
+    display: none;
+}
+.lacostec{
+    display: none;
+}
+.badge{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+
