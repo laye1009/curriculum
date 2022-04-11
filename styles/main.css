@@ -73,9 +73,12 @@ body{
     border-radius: 12px;
     line-height: 50px;
 }
-/*.profile_content{
-    position: relative;
+.profile_content{
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
 }
+/*
 .profile_content .profile span i{
     color: #fff;
     margin-right: 25px;
@@ -99,9 +102,8 @@ body{
 
 .profile_content .profile #name{
     position: absolute;
-    width: 10%;
-    margin-left: 2%;
-    text-align: center;
+    width: 100%;
+    margin-left: 1%;
 }
 .profile_content .profile #job_name{
     padding-top: 10%;

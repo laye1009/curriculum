@@ -7,7 +7,7 @@ function myresizeEvent(){
         {
             test[i].style.display = "none";
         }
-        im.style.width = "100%";
+        im.style.width = "80%";
     }
     if(768 <= window.innerWidth)
     {
