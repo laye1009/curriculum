@@ -9,7 +9,7 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .sidebar{
@@ -122,8 +122,7 @@ header {
 }
 .container{
     position: absolute;
-    left: 22%;
-    background-color:bisque;
+    left: 21%;
     width: 100%;
     height:100%;
 }
@@ -137,7 +136,12 @@ header {
 .formation {
     display: none;
 }
-
+.env{
+    text-decoration: underline;
+}
+.col-8{
+    font-style: italic;
+}
 .control{
     position: relative;
     left: 0%;
@@ -162,7 +166,7 @@ header {
     position: absolute;
     height: 100%;
     left:25%;
-    top:60px;
+    top:5%;
 }
 .dartyc{
     display: none;
