@@ -1,3 +1,21 @@
+// défilement
+
+var msg = "N'hésiter à me contacter, je serai heureux de répondre à vos besoins";
+var parag = document.querySelector("#phead");
+var pos =100;
+//var pos = parag.style.left;
+//var pos = 
+//pos = parseInt(pos.substr(0,2));
+function defilText(){
+    parag.innerHTML=msg;
+    parag.style.left=pos+"%";
+    pos -= 1;
+    if(pos==0) pos=100;
+    setTimeout("defilText()",200);
+}
+
+
+//
 var test = document.getElementsByClassName('l_text');
 var im = document.querySelector('.profile img');
 function displayDim(displ,dim){
@@ -110,3 +128,4 @@ for(var i =0; i < clientEl.length;i++) {
     })
 }
 window.onresize = myresizeEvent;
+window.onload=defilText();

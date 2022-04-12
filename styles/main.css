@@ -9,7 +9,7 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100vw;
-    overflow: auto;
+    
 }
 
 .sidebar{
@@ -115,16 +115,49 @@ body{
 }
 
 /**************************************/
-header {
-    background-image: url('../images/code.jpg');
-    background-repeat: repeat-x;
-    height: 50px;
+/*header {
+    
+    width:100%;
+    background-color: #11101d;
+    font: white;
+}*/
+#dhead{
+    position: sticky;
+    top:0;
+    margin-left:20%;
+    background-color: rgb(0,0,0,0.5);
+    height: 25px;
+}
+#phead{
+    position: absolute;
+    color: #fff;
 }
 .container{
     position: absolute;
     left: 21%;
     width: 100%;
     height:100%;
+    overflow: scroll;
+    text-align: center;
+}
+#cImg{
+    position:absolute;
+    right:40%;
+    margin-top: 5%;
+    height:80%;
+    z-index:-300;
+}
+#cTexte{
+    position:absolute;
+    margin-top: 5%;
+    right:40%;
+    height:65%;
+    width:20%;
+    background-color: rgb(0,0,0,0.5);
+    z-index:500;
+    color: #fff;
+    
+
 }
 .competences {
     display: none;
