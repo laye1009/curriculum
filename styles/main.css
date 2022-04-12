@@ -136,6 +136,10 @@ header {
 .formation {
     display: none;
 }
+#cntwhat img{
+    width:25px;
+    height:25px;
+}
 .env{
     text-decoration: underline;
 }
@@ -161,6 +165,9 @@ header {
 }
 .control li p {
     margin-left: 15px;
+}
+#sousMenu{
+    margin-top: 45%;
 }
 .clients {
     position: absolute;
