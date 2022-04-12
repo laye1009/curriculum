@@ -8,7 +8,7 @@
 body{
     position: relative;
     min-height: 100vh;
-    width: auto;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@ body{
     margin-right: 25px;
 }
 .active {
-    width: 50px;
+    width: 5%;
 }
 
 .sidebar ul{
@@ -52,12 +52,14 @@ body{
     /*margin: 0 50px;*/
     list-style: none;
     line-height: 50px;
+    
 }
 .sidebar ul li a{
     color: #fff;
     text-decoration: none;
     transition: all 0.4s ease;
     border-radius: 12px;
+    
 }
 .bx{
     color: #fff;
@@ -66,12 +68,12 @@ body{
 .sidebar li a:hover{
     color:#11101d;
     background: #fff;
+    line-height: 60px;
 }
 .sidebar ul li a box-icon{
     height: 50px;
     min-width: 50px;
     border-radius: 12px;
-    line-height: 50px;
 }
 .profile_content{
     position: absolute;
@@ -119,8 +121,11 @@ header {
     height: 50px;
 }
 .container{
-    position: relative;
-    left: 10%;
+    position: absolute;
+    left: 22%;
+    background-color:bisque;
+    width: 100%;
+    height:100%;
 }
 .competences {
     display: none;

@@ -1,48 +1,32 @@
 var test = document.getElementsByClassName('l_text');
 var im = document.querySelector('.profile img');
+function displayDim(displ,dim){
+    for(var i = 0; i <test.length;i++)
+    {
+        test[i].style.display = displ;
+    }
+    im.style.width = dim;
+}
 function myresizeEvent(){
     if(window.innerWidth < 768)
     {
-        for(var i = 0; i <test.length;i++)
-        {
-            test[i].style.display = "none";
-        }
-        im.style.width = "80%";
+        displayDim("none","75%");
+        
     }
     if(768 <= window.innerWidth)
     {
-        for(var i = 0; i <test.length;i++)
-        {
-            test[i].style.display = "contents";
-        }
-        im.style.width = "20%";
+        displayDim("contents","20%");
     }
 }
-window.onresize = myresizeEvent;
-
-//console.log(test[1].style.display(');
-var sidebar = document.querySelector(".sidebar");
-var menu = document.querySelector("#btn");
-
-//if(window.innerWidth <768) 
-
-var competences = document.querySelector('.competences');
-var experiences = document.querySelector('.experiences');
-var formation = document.querySelector('.formation');
-var dashboard = document.querySelector('.dashboard');
-
-var container = document.querySelector('.container');
-menu.onclick  = function(){
-    sidebar.classList.toggle("active");
-}
-
-arraySide = sidebar.getElementsByTagName('li');
-for(var i=0;i<arraySide.length;i++){
-    arraySide[i].addEventListener("click",function(e){
-        //var htmlVal = competences.getElementByClass(innerHTML;
+function ongletManage(clicked_element){
+    clicked_element[i].addEventListener("click",function(e){
+        //var htmlVal = competences.getElementByClass(innerHTML);
         //container.appendChild(competences);
-        var delement = e.target.getAttribute("data-element");
+        var node_parent =e.target.parentNode;
+        var delement = node_parent.getAttribute("data-element");
+        console.log(delement);
         if (delement == "competences") {
+            console.log('ef');
             container.innerHTML="";
             container.appendChild(competences);
             competences.classList.remove("competences");
@@ -61,6 +45,36 @@ for(var i=0;i<arraySide.length;i++){
             delete delement;
         }
     });
+}
+
+//console.log(test[1].style.display(');
+var sidebar = document.querySelector(".sidebar");
+var menu = document.querySelector("#btn");
+
+//if(window.innerWidth <768) 
+
+var competences = document.querySelector('.competences');
+var experiences = document.querySelector('.experiences');
+var formation = document.querySelector('.formation');
+var dashboard = document.querySelector('.dashboard');
+
+var container = document.querySelector('.container');
+menu.onclick  = function(){
+    sidebar.classList.toggle("active");
+    var side_classe = Array.from(sidebar.classList);
+    if(side_classe.indexOf('active') !=-1){
+        displayDim("none","75%");
+        container.style.left = "7%";
+    } else
+    {
+        displayDim("contents","20%");
+        container.style.left = "22%";
+    }
+}
+
+arraySide = sidebar.getElementsByTagName('a');
+for(var i=0;i<arraySide.length;i++){
+    ongletManage(arraySide);
 }
 
 ////////////////
@@ -95,3 +109,4 @@ for(var i =0; i < clientEl.length;i++) {
         }
     })
 }
+window.onresize = myresizeEvent;
