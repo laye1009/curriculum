@@ -1,6 +1,6 @@
 // défilement
 
-var msg = "N'hésiter à me contacter, je serai heureux de répondre à vos besoins";
+var msg = "N'hésiter à me contacter, je serai ravi de répondre à vos besoins";
 var parag = document.querySelector("#phead");
 var pos =100;
 //var pos = parag.style.left;
