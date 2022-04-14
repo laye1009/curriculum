@@ -1,5 +1,4 @@
 // défilement
-
 var msg = "N'hésiter à me contacter, je serai ravi de répondre à vos besoins";
 var parag = document.querySelector("#phead");
 var pos =100;
@@ -10,7 +9,7 @@ function defilText(){
     parag.innerHTML=msg;
     parag.style.left=pos+"%";
     pos -= 1;
-    if(pos==0) pos=100;
+    if(pos==-50) pos=100;
     setTimeout("defilText()",200);
 }
 
@@ -29,11 +28,13 @@ function myresizeEvent(){
     if(window.innerWidth < 768)
     {
         displayDim("none","75%");
+        document.querySelector(".logo_name").style.display="none";
         
     }
     if(768 <= window.innerWidth)
     {
         displayDim("contents","20%");
+        document.querySelector(".logo_name").style.display="contents";
     }
 }
 function ongletManage(clicked_element){
@@ -119,11 +120,6 @@ for(var i =0; i < clientEl.length;i++) {
             clients.innerHTML= "";
             clients.appendChild(electro);
             electro.classList.remove("electroc");
-        }
-        if (d =="lacoste") {
-            clients.innerHTML= "";
-            clients.appendChild(lacoste);
-            lacoste.classList.remove("lacostec");
         }
     })
 }
