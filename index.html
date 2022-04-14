@@ -17,17 +17,19 @@
 
 </head>
 <body>
-    <div id="dhead">
-        <p id="phead">
-        </p>
-    </div>
-    <div class="fluid">
+    <header>
+        <div id="dhead">
+            <p id="phead">
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
         <div class="sidebar">
             <div class="logo_content">
                 <div class="logo">
                     <div class="logo_name">Mr. KEBE</div>
                 </div>
-                <div id="btn"><i class='bx bx-menu' ></i></i></div>
+                <!--<div id="btn"><i class='bx bx-menu' ></i></i></div> -->
             </div>
             <ul class="nav_list">
                 <li>
@@ -70,10 +72,18 @@
                 <strong>Profession: </strong> Développeur PHP<br>
                 <br><br><br>
                 <strong style="text-decoration: underline;">Compétences:</strong><br>
-                <ul>
-                    <li>->Développement Web & applications</li>
-                    <li>->Formateur</li>
-                </ul>
+                <div>
+                    <span>
+                        <img style="width:20px;height:20;" src="images/developpeur.png"> 
+                    </span>
+                    Développement Web & Application
+                </div>
+                <div style="margin-left:0%;">
+                    <span>
+                        <img style="width:20px;height:20;" src="images/formateur.png"> 
+                    </span>
+                    Formateur
+                </div>
             </div>
         </div>
         <section class="competences mt-5">
@@ -285,7 +295,6 @@
             <div class="dartyc">
                 <div class="row">
                     <h2 class="font-weight-bold font-italic">Projet: Maintenance de l'application de gestion des ventes</h2>
-
                 </div>
                 <div class="row">
                 </div>
@@ -359,7 +368,7 @@
                         Framework/Langage
                     </div>
                     <div class="font-italic col-8">
-                        SYMFONY, Mysql, PHP5, HTML/CSS, Javascript, Jquery, Ajax
+                        SYMFONY, Mysql, PHP5s, HTML/CSS, Javascript, Jquery, Ajax
                     </div>
                     <div class="col-3">
                         Versionning
@@ -377,8 +386,16 @@
                         Système d'exploitation
                     </div>
                     <div class="font-italic col-8">
-                        Windows
+                        Linux
                     </div>
+                    <div class="col-3">
+                        Autres outils
+                    </div>
+                    <div class="font-italic col-8">
+                        Docker, Jira, Gitlab CI-CD
+                    </div>
+
+                    
                 </div>
             </div>
             <!-- Credit agricole ********************-->
@@ -459,7 +476,7 @@
                         Framework/Langage
                     </div>
                     <div class="font-italic col-8">
-                        SYMFONY, PHP5, SQL Server, HTML/CSS, Javascript, Jquery, Ajax
+                        SYMFONY, PHP7, SQL Server, HTML/CSS, Javascript, Jquery, Ajax
                     </div>
                     <div class="col-3">
                         Versionning

@@ -1,5 +1,10 @@
+document.querySelector(".profile img").addEventListener("click",function(e){
+    console.log("ddd");
+    window.location.reload();
+});
 // défilement
-var msg = "N'hésiter à me contacter, je serai ravi de répondre à vos besoins";
+var msg = "N'hésiter à me contacter, je serai ravi de répondre à vos besoins \
+(Visualiser cette page sur une tablette ou un ecran plus large).";
 var parag = document.querySelector("#phead");
 var pos =100;
 //var pos = parag.style.left;
@@ -78,7 +83,7 @@ var formation = document.querySelector('.formation');
 var dashboard = document.querySelector('.dashboard');
 
 var container = document.querySelector('.container');
-menu.onclick  = function(){
+/*menu.onclick  = function(){
     sidebar.classList.toggle("active");
     var side_classe = Array.from(sidebar.classList);
     if(side_classe.indexOf('active') !=-1){
@@ -89,7 +94,7 @@ menu.onclick  = function(){
         displayDim("contents","20%");
         container.style.left = "22%";
     }
-}
+}*/
 
 arraySide = sidebar.getElementsByTagName('a');
 for(var i=0;i<arraySide.length;i++){
