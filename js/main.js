@@ -3,8 +3,7 @@ document.querySelector(".profile img").addEventListener("click",function(e){
     window.location.reload();
 });
 // défilement
-var msg = "N'hésiter à me contacter, je serai ravi de répondre à vos besoins \
-(Visualiser cette page sur une tablette ou un ecran plus large).";
+var msg = "N'hésiter à me contacter, je serai ravi de répondre à vos besoin";
 var parag = document.querySelector("#phead");
 var pos =100;
 //var pos = parag.style.left;
