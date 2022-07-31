@@ -1,14 +1,34 @@
-document.querySelector(".profile img").addEventListener("click",function(e){
-    console.log("ddd");
-    window.location.reload();
-});
+
 // défilement
-var msg = "N'hésiter à me contacter, je serai ravi de répondre à vos besoin";
+var msg = "N'hésitez à me contacter, je serai ravi de répondre à vos besoins";
 var parag = document.querySelector("#phead");
-var pos =100;
+var pos =90;
 //var pos = parag.style.left;
 //var pos = 
 //pos = parseInt(pos.substr(0,2));
+/*function defillText(pos,idx,posActu,step){
+
+   var msgLength = msg.length;
+    var smsg = msg.substr(1,2);
+    var idx = 1;
+    posActu = 3;
+    if(typeof pos=='undefined') pos = 90;
+    var bouge = posActu + idx * step;
+    if(bouge <= msgLength)
+    {
+        smsg += msg.substr(posActu,step)
+        parag.innerHTML= smsg;
+        idx += 1;
+        posActu = bouge;
+    }
+    
+    parag.style.left=pos+"%";
+    pos -= 1;
+    if(pos==-50) pos=90;
+    console.log(pos);
+    setTimeout("defilText("+pos+","+idx+","+posActu+","+5+"),"+100000000);
+    
+}*/
 function defilText(){
     parag.innerHTML=msg;
     parag.style.left=pos+"%";
@@ -17,10 +37,9 @@ function defilText(){
     setTimeout("defilText()",200);
 }
 
-
 //
 var test = document.getElementsByClassName('l_text');
-var im = document.querySelector('.profile img');
+/*var im = document.querySelector('.profile img');
 function displayDim(displ,dim){
     for(var i = 0; i <test.length;i++)
     {
@@ -40,14 +59,13 @@ function myresizeEvent(){
         displayDim("contents","20%");
         document.querySelector(".logo_name").style.display="contents";
     }
-}
+}*/
 function ongletManage(clicked_element){
     clicked_element[i].addEventListener("click",function(e){
         //var htmlVal = competences.getElementByClass(innerHTML);
         //container.appendChild(competences);
         var node_parent =e.target.parentNode;
         var delement = node_parent.getAttribute("data-element");
-        console.log(delement);
         if (delement == "competences") {
             console.log('ef');
             container.innerHTML="";
@@ -71,8 +89,8 @@ function ongletManage(clicked_element){
 }
 
 //console.log(test[1].style.display(');
-var sidebar = document.querySelector(".sidebar");
-var menu = document.querySelector("#btn");
+var sidebar = document.querySelector("#navbarSupportedContent");
+//var menu = document.querySelector("#btn");*/
 
 //if(window.innerWidth <768) 
 
@@ -114,7 +132,7 @@ var clients = document.querySelector(".clients");
 
 for(var i =0; i < clientEl.length;i++) {
     clientEl[i].addEventListener("click",function(e){
-        var d = e.target.className.split(" ")[2];
+        var d = e.target.className.split(" ")[3];
         if (d =="fnac") {
             clients.innerHTML= "";
             clients.appendChild(darty);
@@ -127,5 +145,5 @@ for(var i =0; i < clientEl.length;i++) {
         }
     })
 }
-window.onresize = myresizeEvent;
+//window.onresize = myresizeEvent;
 window.onload=defilText();

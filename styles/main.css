@@ -8,8 +8,9 @@
 body{
     position: relative;
     min-height: 100vh;
-    width: 100vw;
-    overflow: auto;
+    padding-bottom: 2px;
+    width: auto;
+    background-image: url('../images/nature.jpeg') !important;
     
 }
 
@@ -21,17 +22,8 @@ body{
     width: 5%;
     background: #11101d;
     padding: 6px 14px;
-    color: #fff;
 }
-.l_text{
-    visibility: hidden;
-    width: auto;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-}
+
 .logo_name{
     word-break: normal;
 }
@@ -39,7 +31,6 @@ body{
     width:5%;
 }
 .sidebar .logo_content .logo{
-    color: #fff;
     display: flex;
     height: 50px;
     width: 100%;
@@ -54,40 +45,10 @@ body{
     width: 5%;
 }
 
-.sidebar ul{
-    position:relative;
-    margin-top: 20px;
-}
-
-.sidebar ul li{
-    white-space: nowrap;
-    /*margin: 0 50px;*/
-    list-style: none;
-    line-height: 50px;
-    
-}
-.sidebar ul li a{
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    border-radius: 12px;
-    
-}
 .bx{
     color: #fff;
-    margin-right: 2%;
-}
-.sidebar li a:hover .l_text{
-    visibility: visible;
 }
 
-.sidebar ul li a box-icon{
-    height: 50px;
-    border-radius: 12px;
-}
-.profile:hover .l_text{
-    visibility: visible;
-}
 .profile_content{
     position: absolute;
     bottom: 5%;
@@ -102,13 +63,6 @@ body{
     position: relative;
     margin-bottom: 25%;
     height: 60px;
-}
-
-.profile_content .profile img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
 }
 /* #myImage{
     height: 30px;
@@ -127,38 +81,74 @@ body{
 }
 
 /**************************************/
-/*header {
-    
-    width:100%;
-    background-color: #11101d;
-    font: white;
-}*/
+.red-divider{
+    width:100px;
+    height:2px;
+    background:#d82c2e;
+    margin: 0 auto;
+}
+
+header{
+    height:auto;
+}
 #dhead{
     position: sticky;
     top:0;
-    margin-left:5%;
-    background-color: rgb(0,0,0);
+    background-color: #fff;
     height: 29px;
+}
+
+header{
+    text-align: center;
 }
 #phead{
     position: absolute;
+    color: black;
+    overflow: hidden;
+    text-decoration: italic;
+    height: 90%;
+    font-weight: bold;
+}
+
+.navbar-nav{
+    width: 100%;
+    
+}
+.nav-link{
+    width:100%;
+}
+.navbar-nav li{
+    width:35%;
+}
+
+.navbar-nav li a{
+    width:100%;
+}
+.nav-container{
+    background-color: #11101d;
+}
+.l_text{
     color: #fff;
+}
+.nav-link{
+    width: 30%;
 }
 .container{
     position: absolute;
-    left: 7%;
     width: 100%;
-    height:100%;
+    height:10%;
     text-align: center;
+    right: 5%;
+    left: 5%;
 }
-#cImg{
+/*#cImg{
     position:absolute;
     right:50%;
     margin-top: 5%;
     height:65%;
     z-index:-300;
-}
-#cTexte{
+}*/
+/*#cTexte{
     position:absolute;
     margin-top: 5%;
     right:50%;
@@ -167,11 +157,20 @@ body{
     background-color: rgb(0,0,0,0.5);
     z-index:500;
     color: #fff;
-    
-
+}*/
+.title{
+    font-weight: 700;
+    font-weight: bold;
+}
+.my-row{
+    padding: 10px;
+}
+.centre strong{
+    margin-right: 3px;
 }
 .competences {
     display: none;
+    right: 2%;
 }
 
 .experiences {
@@ -190,10 +189,15 @@ body{
 .col-8{
     font-style: italic;
 }
+.control{
+    width: 100%;
+}
 
 .control li {
     list-style: none;
-    line-height: 25px;
+    line-height: auto;
+    text-align: center;
+    
 }
 
 .control li p {
@@ -201,25 +205,26 @@ body{
 }
 #sousMenu{
     display: flex;
-    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    /*justify-content: center;*/
     margin-top: 2%;
+    padding-right: 4%;
+    padding-left: 2%;
 }
 #sousMenu .electro{
     position: relative;
-    margin-left: 25%;
-    margin-right: 2%;
+    margin-right: 35%;
 }
 #sousMenu .fnac{
     position: relative;
-    margin-right: 35%;
-
+    
 
 }
 .clients {
     position: absolute;
     height: 100%;
     left:2%;
-    top:22%;
 }
 .dartyc{
     display: none;
