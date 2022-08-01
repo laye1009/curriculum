@@ -41,7 +41,7 @@ function ongletManage(clicked_element){
         if (delement == "realisation") {
             container.innerHTML="";
             container.appendChild(realisation);
-            formation.classList.remove("realisation");
+            realisation.classList.remove("realisation");
             delete delement;
         }
     });
