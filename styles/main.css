@@ -104,7 +104,7 @@ header{
 #phead{
     position: absolute;
     color: black;
-    overflow: scroll;
+    overflow: hidden;
     text-decoration: italic;
     height: 90%;
     font-weight: bold;
